@@ -12,7 +12,7 @@ namespace VisionLimit
     {
         static void Main(string[] args)
         {
-            //List<VFilter> filters = new List<VFilter>();
+            List<VFilter> filters = new List<VFilter>();
 
             var nlClient = new NLClient();
             Console.WriteLine("Ayo");
@@ -28,7 +28,7 @@ namespace VisionLimit
             }
 
             Console.WriteLine("Adding filters");
-           // filters.Add(new VFilter(client, RuleDir.Out, 3074, 1));
+            filters.Add(new VFilter(client, RuleDir.Out, 3074, 1));
 
         }
     }
